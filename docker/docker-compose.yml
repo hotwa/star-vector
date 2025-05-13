@@ -13,6 +13,7 @@ services:
     volumes:
       - ../:/workspace
       - ~/.cache/huggingface:/root/.cache/huggingface
+    command: conda run -n starvector jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
     environment:
       HF_ENDPOINT: "https://hf-mirror.com"
       NVIDIA_VISIBLE_DEVICES: all
