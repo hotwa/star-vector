@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
     build-essential \
     libcairo2 \
-    cuda-compiler-12-4 \
+    cuda-toolkit-12-4 \
     libaio-dev \
     && rm -rf /var/lib/apt/lists/*
 
